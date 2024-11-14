@@ -8,8 +8,9 @@ import CSS from "./technologies/CSS.astro";
 import PHP from "./technologies/PHP.astro";
 import NodeJS from "./technologies/NodeJS.astro";
 import TailwinCSS from "./technologies/TailwindCSS.astro";
+import ASTRO from "./technologies/Astro.astro";
 
-import ArrowRight from "./icons/ArrowRight.astro";
+// import ArrowRight from "./icons/ArrowRight.astro";
 
 const TECHNOLOGIES = {
   JS: {
@@ -57,6 +58,11 @@ const TECHNOLOGIES = {
     class: "bg-[#63BAF4]/25 text-white",
     icon: TailwinCSS,
   },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-white/15 text-white",
+    icon: ASTRO,
+  },
 };
 
 const EXPERIENCE_DATA = [
@@ -83,6 +89,16 @@ const EXPERIENCE_DATA = [
       TECHNOLOGIES.HTML5,
       TECHNOLOGIES.TAILWINDCSS,
     ],
+  },
+  {
+    startDate: "February 2024",
+    endDate: "March 2024",
+    totalTime: "1 month",
+    title: "Web Develop for company '99R Pastillas de Freno'",
+    company: "Freelance Project",
+    description:
+      "Development of a webpage for the company '99R Pastillas de Freno', who needed to take down an obsolete e-commerce site and replace it with a more agile and modern landing page.",
+    technologies: [TECHNOLOGIES.ASTRO, TECHNOLOGIES.TAILWINDCSS],
   },
   {
     startDate: "April 2023",
