@@ -1,0 +1,88 @@
+---
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import GithubIcon from "../components/icons/Github.astro";
+---
+
+<header
+    class="flex flex-col px-5 lg:px-0 lg:sticky lg:top-0 lg:max-h-screen lg:w-1/2 lg:py-24"
+>
+    <article class="order-1">
+        <img
+            src="pablogmartinez.webp"
+            alt="Foto de Pablo Martinez."
+            class="rounded-full w-24 h-24 mb-4 shadow-md shadow-black/50"
+        />
+        <h1 class="text-4xl font-bold mb-4">Hey, I'm Pablo Martinez</h1>
+        <h2 class="text-xl mb-4">Senior Software Engineer</h2>
+        <p class="text-md mb-8 text-pretty">
+            <span class="text-yellow-400">+6 years of experience</span> as Web Developer.
+            From <strong>
+                <span
+                    class="text-blue-500 [text-shadow:_0_0_10px_rgb(0_128_128_/_100%)]"
+                    >Ar</span
+                ><span
+                    class="text-white [text-shadow:_0_0_10px_rgb(255_255_255_/_100%)]"
+                    >ge</span
+                ><span
+                    class="text-yellow-300 [text-shadow:_0_0_10px_rgb(253_224_71_/_100%)]"
+                    >n</span
+                ><span
+                    class="text-white [text-shadow:_0_0_10px_rgb(255_255_255_/_100%)]"
+                    >ti</span
+                ><span
+                    class="text-blue-500 [text-shadow:_0_0_10px_rgb(0_128_128_/_100%)]"
+                    >na</span
+                >
+            </strong>🧉.
+        </p>
+    </article>
+
+    <nav
+        class="hidden lg:flex lg:flex-col lg:gap-y-2 lg:flex-grow order-3 lg:order-2"
+    >
+        <a
+            href="#nav__a-experience"
+            class="text-white/50 nav-link active-link transition-all"
+            >Experience</a
+        >
+        <a href="#nav__a-projects" class="text-white/50 nav-link transition-all"
+            >Projects</a
+        >
+        <a href="#nav__a-about" class="text-white/50 nav-link transition-all"
+            >About</a
+        >
+        <a href="#nav__a-contact" class="text-white/50 nav-link transition-all"
+            >Contact</a
+        >
+    </nav>
+
+    <footer class="order-2 lg:order-3">
+        <nav class="flex flex-row gap-x-4">
+            <a
+                href="https://www.linkedin.com/in/pablo-martinez-698720140/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-100/50 hover:text-slate-200 transition-colors"
+            >
+                <LinkedInIcon class="w-6 h-6" />
+            </a>
+            <a
+                href="https://github.com/pablogmartinez95"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-100/50 hover:text-slate-200 transition-colors"
+            >
+                <GithubIcon class="w-6 h-6" />
+            </a>
+            <a
+                href="mailto:pablogmartinez95@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-100/50 hover:text-slate-200 transition-colors"
+            >
+                <MailIcon class="w-6 h-6" />
+            </a>
+        </nav>
+    </footer>
+</header>

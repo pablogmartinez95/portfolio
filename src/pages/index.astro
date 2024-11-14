@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Header from "../components/Header.astro";
+import Timeline from "../components/Timeline.astro";
+import Projects from "../components/Projects.astro";
+import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
+---
+
+<Layout title="Pablo Martinez">
+  <main
+    class="relative z-[3] mx-auto min-h-screen md:max-w-screen-md lg:max-w-screen-xl px-0 py-12 md:py-20 lg:px-24 lg:py-0"
+  >
+    <section
+      class="flex flex-col lg:flex-row justify-between gap-y-4 lg:gap-x-4"
+    >
+      <Header />
+      <main class="pt-0 lg:w-1/2 z-10 lg:py-24">
+        <section id="nav__a-experience" class="section mb-12 lg:mb-24">
+          <div
+            class="sticky top-0 z-30 backdrop-blur-md opacity-1 pt-0 lg:opacity-0 lg:hidden"
+          >
+            <h1 class="p-4 text-2xl text-yellow-500">Experience</h1>
+          </div>
+          <Timeline />
+        </section>
+        <section id="nav__a-projects" class="section mb-12 lg:mb-24">
+          <div
+            class="sticky top-0 z-30 backdrop-blur-md opacity-1 pt-0 lg:opacity-0 lg:hidden"
+          >
+            <h1 class="p-4 text-2xl text-yellow-500">Projects</h1>
+          </div>
+          <Projects />
+        </section>
+        <section id="nav__a-about" class="section mb-12 lg:mb-24">
+          <About />
+        </section>
+        <section id="nav__a-contact" class="section mb-12 lg:mb-24">
+          <Contact />
+        </section>
+        <footer class="bg-black/50 rounded-lg px-4">
+          <small
+            >Este portfolio esta basado en el de <a
+              href="https://brittanychiang.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline">Brittany Chiang</a
+            ></small
+          >
+        </footer>
+      </main>
+    </section>
+  </main>
+</Layout>
